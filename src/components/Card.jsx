@@ -1,4 +1,5 @@
 import ServicesImg from '../assets/services.jpg'
+import WaveComponent from './WaveComponent'
 
 export default function Card() {
 
@@ -6,48 +7,51 @@ export default function Card() {
         {
             id: 1,
             title: "Digital Marketing",
-            description: "Digital marketing encompasses all marketing efforts that use the internet and digital technologies to promote products or services. It includes strategies like search engine optimization (SEO), social media marketing, email marketing, and online advertising, aiming to increase brand awareness, drive traffic to websites, and ultimately, achieve marketing goals.",
-            styleClass: "shadow-xl rounded-lg p-6 w-fit lg:mt-50 bg-white max-lg:row-span-5"
+            description: "From social media strategies to search engine optimization, I'll craft a tailored approach that captures your brand's success and engages your taget audience effectively.",
+            styleClass: " rounded-lg border-neutral-500 border row-span-2 row-start-4 p-4 w-fit max-2xl:text-sm max-lg:row-span-1 max-lg:col-span-4"
         },
         {
             id: 2,
             title: "Web Development",
-            description: "Web development is the process of creating, building, and maintaining websites and web applications. It involves various aspects, including web design, programming, and database management. Web development is generally categorized into frontend development (the user-facing part of the website), backend development (the server-side logic), and full-stack development.",
-            styleClass: "shadow-xl rounded-lg p-6 w-fit bg-white max-lg:row-span-5 max-lg:col-start-3"
+            description: "By working closely with you, I intigrate your ideas and goals into every aspect of the site, ensuring we craft a digital experience that resonates with your audience.",
+            styleClass: " rounded-lg border-neutral-500 border col-start-2 row-span-2 row-start-3 p-4 w-fit max-2xl:text-sm max-lg:row-span-1 max-lg:col-span-4 max-lg:col-start-5"
         },
         {
             id: 3,
-            title: "Mobile App Development",
-            description: "Mobile app development is the process of creating software applications that run on mobile devices, such as smartphones and tablets. It involves designing, coding, testing, and deploying apps for various platforms, including iOS and Android. Mobile app development can be done using native programming languages or cross-platform frameworks, allowing developers to reach a wider audience.",
-            styleClass: "shadow-xl rounded-lg p-6 w-fit lg:mb-50 bg-white max-lg:row-span-5 max-lg:row-start-6 max-lg:col-start-2"
+            title: "App Development",
+            description: "We specialize in App Development. Let's collaborate to turn your vision into a reality and ensure that your application stands out in the crowded app marketplace",
+            styleClass: " rounded-lg border-neutral-500 border col-start-3 row-span-2 row-start-2 p-4 w-fit max-2xl:text-sm max-lg:col-start-3 max-lg:row-start-2 max-lg:row-span-1 max-lg:col-span-4"
         },
         {
             id: 4,
-            title: "Graphic Design",
-            description: "Graphic design is the art and practice of creating visual content to communicate messages and ideas. It involves combining typography, images, colors, and layout to produce visually appealing designs for various mediums advertising. Graphic designers use software tools to create logos, websites, and other visual materials that effectively convey information and evoke emotions.",
-            styleClass: "shadow-xl rounded-lg p-6 w-fit bg-white max-lg:row-span-5 max-lg:row-start-11"
+            title: "Branding",
+            description: "We're here to elevate your brand's presence through innovative strategies that not only highlight what makes you special but also drive engagement and loyalty.",
+            styleClass: " rounded-lg border-neutral-500 border col-start-4 row-span-2 row-start-3 p-4 w-fit max-2xl:text-sm max-lg:row-start-3 max-lg:col-start-1 max-lg:row-span-1 max-lg:col-span-4"
         },
         {
             id: 5,
-            title: "Content Writing",
-            description: "Content writing is the process of planning, creating, and editing written material for various platforms, including websites, blogs, social media, and marketing materials. It involves researching topics, understanding target audiences, and crafting engaging and informative content that meets specific goals. Content writers often focus on SEO to improve online visibility and drive traffic to websites.",
-            styleClass: "shadow-xl rounded-lg p-6 w-fit lg:mt-50 bg-white max-lg:row-span-5 max-lg:col-start-3 max-lg:row-start-11"
+            title: "Analytics",
+            description: "By collaborating with clients like you, I will craft an exceptional strategy that leverages detailed analytics, allowing your business to thrive in today's competition.",
+            styleClass: "rounded-lg border-neutral-500 border col-start-5 row-span-2 row-start-4 p-4 w-fit max-2xl:text-sm max-lg:row-span-5 max-lg:row-start-3 max-lg:col-start-5 max-lg:row-span-1 max-lg:col-span-4"
         },
     ]
 
 
     return (
         <div>
-            <svg className='rotate-180' viewBox="0 0 1910 245" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><path fill="rgba(10, 93, 252, 0.8)" d="M 0 189 C 582.6 189 388.4 110 971 110 L 971 110 L 971 0 L 0 0 Z" strokeWidth="0"></path> <path fill="rgba(10, 93, 252, 0.8)" d="M 970 110 C 1534 110 1346 0 1910 0 L 1910 0 L 1910 0 L 970 0 Z" strokeWidth="0"></path> </svg>
-            <div className='bg-linear-to-r from-blue-400 to-blue-600'>
-                <h1 className='text-center text-3xl font-bold'>Cards</h1>
-                <div className='grid grid-cols-5 max-lg:grid-row-15 max-lg:grid-cols-3 place-items-center gap-4 p-10'>
+            <div>
+                <WaveComponent />
+            </div>
+            <div className='border-t-stone-500 border bg-gradient-to-t from-neutral-900 via-purple-800 to-neutral-900'>
+                <div className='grid grid-cols-5 grid-rows-[repeat(6,125px)] max-lg:grid-rows-3 max-lg:grid-cols-8 place-items-center gap-2 px-2'>
+                    <div className='text-4xl max-lg:text-2xl font-bold text-white row-span-1 row-start-1 max-lg:row-span-none max-lg:col-span-1 max-lg:row-start-2 max-lg:-rotate-90'>Services</div>
+                    <div className='text-4xl max-lg:text-2xl text-nowrap font-bold text-white row-span-1 col-start-5 row-start-1 max-lg:col-start-8 max-lg:row-span-none max-lg:row-start-2 max-lg:-rotate-90'>We Provide</div>
                     {cardsData.map((card) => (
                         <div key={card.id} className={card.styleClass}>
-                            <img src={ServicesImg} className='rounded-full' alt="img" />
-                            <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
-                            <p className="text-gray-700">{card.description}</p>
-                            <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">Know More</button>
+                            <img src={ServicesImg} className='rounded-full w-15' alt="img" />
+                            <h2 className="text-lg text-white font-semibold mb-1">{card.title}</h2>
+                            <p className="text-white">{card.description}</p>
+                            <button className="mt-4 bg-gradient-to-r from-red-600 to-orange-400 shadow-[0px_0px_20px_2px_#ff8040] text-white py-2 px-4 max-2xl:px-3 max-2xl:py-1 max-2xl:mt-2 rounded-full hover:bg-gradient-to-l hover:to-red-700 hover:from-orange-500 cursor-pointer">Know More</button>
                         </div>
                     ))}
                 </div>
