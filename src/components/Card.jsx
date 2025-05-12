@@ -32,7 +32,7 @@ export default function Card() {
             id: 5,
             title: "Analytics",
             description: "By collaborating with clients like you, I will craft an exceptional strategy that leverages detailed analytics, allowing your business to thrive in today's competition.",
-            styleClass: "rounded-lg border-neutral-500 border col-start-5 row-span-2 row-start-4 p-4 w-fit max-2xl:text-sm max-lg:row-span-5 max-lg:row-start-3 max-lg:col-start-5 max-lg:row-span-1 max-lg:col-span-4"
+            styleClass: "rounded-lg border-neutral-500 border col-start-5 row-span-2 row-start-4 p-4 w-fit max-2xl:text-sm max-lg:row-start-3 max-lg:col-start-5 max-lg:row-span-1 max-lg:col-span-4"
         },
     ]
 
@@ -43,7 +43,7 @@ export default function Card() {
                 <WaveComponent />
             </div>
             <div className='border-t-stone-500 border bg-gradient-to-t from-neutral-900 via-purple-800 to-neutral-900'>
-                <div className='grid grid-cols-5 grid-rows-[repeat(6,125px)] max-lg:grid-rows-3 max-lg:grid-cols-8 place-items-center gap-2 px-2'>
+                <div className='grid grid-cols-5 grid-rows-[repeat(6,125px)] max-lg:grid-rows-3 max-lg:grid-cols-8 place-items-center gap-4 px-2'>
                     <div className='text-4xl max-lg:text-2xl font-bold text-white row-span-1 row-start-1 max-lg:row-span-none max-lg:col-span-1 max-lg:row-start-2 max-lg:-rotate-90'>Services</div>
                     <div className='text-4xl max-lg:text-2xl text-nowrap font-bold text-white row-span-1 col-start-5 row-start-1 max-lg:col-start-8 max-lg:row-span-none max-lg:row-start-2 max-lg:-rotate-90'>We Provide</div>
                     {cardsData.map((card) => (
