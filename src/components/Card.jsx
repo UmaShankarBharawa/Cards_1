@@ -8,31 +8,31 @@ export default function Card() {
             id: 1,
             title: "Digital Marketing",
             description: "From social media strategies to search engine optimization, I'll craft a tailored approach that captures your brand's success and engages your taget audience effectively.",
-            styleClass: " rounded-lg border-neutral-500 border row-span-2 row-start-4 p-4 w-fit max-2xl:text-sm max-lg:row-span-1 max-lg:col-span-4"
+            styleClass: "backdrop-blur-xs rounded-lg border-neutral-500 border row-span-2 row-start-4 p-4 w-fit max-2xl:text-sm max-lg:row-span-1 max-lg:col-span-4"
         },
         {
             id: 2,
             title: "Web Development",
             description: "By working closely with you, I intigrate your ideas and goals into every aspect of the site, ensuring we craft a digital experience that resonates with your audience.",
-            styleClass: " rounded-lg border-neutral-500 border col-start-2 row-span-2 row-start-3 p-4 w-fit max-2xl:text-sm max-lg:row-span-1 max-lg:col-span-4 max-lg:col-start-5"
+            styleClass: "backdrop-blur-xs rounded-lg border-neutral-500 border col-start-2 row-span-2 row-start-3 p-4 w-fit max-2xl:text-sm max-lg:row-span-1 max-lg:col-span-4 max-lg:col-start-5"
         },
         {
             id: 3,
             title: "App Development",
             description: "We specialize in App Development. Let's collaborate to turn your vision into a reality and ensure that your application stands out in the crowded app marketplace",
-            styleClass: " rounded-lg border-neutral-500 border col-start-3 row-span-2 row-start-2 p-4 w-fit max-2xl:text-sm max-lg:col-start-3 max-lg:row-start-2 max-lg:row-span-1 max-lg:col-span-4"
+            styleClass: "backdrop-blur-xs rounded-lg border-neutral-500 border col-start-3 row-span-2 row-start-2 p-4 w-fit max-2xl:text-sm max-lg:col-start-3 max-lg:row-start-2 max-lg:row-span-1 max-lg:col-span-4"
         },
         {
             id: 4,
             title: "Branding",
             description: "We're here to elevate your brand's presence through innovative strategies that not only highlight what makes you special but also drive engagement and loyalty.",
-            styleClass: " rounded-lg border-neutral-500 border col-start-4 row-span-2 row-start-3 p-4 w-fit max-2xl:text-sm max-lg:row-start-3 max-lg:col-start-1 max-lg:row-span-1 max-lg:col-span-4"
+            styleClass: "backdrop-blur-xs rounded-lg border-neutral-500 border col-start-4 row-span-2 row-start-3 p-4 w-fit max-2xl:text-sm max-lg:row-start-3 max-lg:col-start-1 max-lg:row-span-1 max-lg:col-span-4"
         },
         {
             id: 5,
             title: "Analytics",
             description: "By collaborating with clients like you, I will craft an exceptional strategy that leverages detailed analytics, allowing your business to thrive in today's competition.",
-            styleClass: "rounded-lg border-neutral-500 border col-start-5 row-span-2 row-start-4 p-4 w-fit max-2xl:text-sm max-lg:row-start-3 max-lg:col-start-5 max-lg:row-span-1 max-lg:col-span-4"
+            styleClass: "backdrop-blur-xs rounded-lg border-neutral-500 border col-start-5 row-span-2 row-start-4 p-4 w-fit max-2xl:text-sm max-lg:row-start-3 max-lg:col-start-5 max-lg:row-span-1 max-lg:col-span-4"
         },
     ]
 
@@ -42,7 +42,37 @@ export default function Card() {
             <div>
                 <WaveComponent />
             </div>
-            <div className='border-t-stone-500 border bg-gradient-to-t from-neutral-900 via-purple-800 to-neutral-900'>
+            <div className='border-t-stone-500 border relative bg-gradient-to-t from-neutral-900 via-purple-800 to-neutral-900'>
+                <svg
+                    className='background-circles absolute top-0 left-0 w-full h-full opacity-25'
+                    viewBox='0 0 800 800'
+                    xmlns='http://www.w3.org/2000/svg'
+                >
+                    <circle
+                        cx='400'
+                        cy='800'
+                        r='600'
+                        stroke='white'
+                        strokeWidth='2'
+                        fill='none'
+                    />
+                    <circle
+                        cx='400'
+                        cy='800'
+                        r='400'
+                        stroke='white'
+                        strokeWidth='2'
+                        fill='none'
+                    />
+                    <circle
+                        cx='400'
+                        cy='800'
+                        r='200'
+                        stroke='white'
+                        strokeWidth='2'
+                        fill='none'
+                    />
+                </svg>
                 <div className='grid grid-cols-5 grid-rows-[repeat(6,125px)] max-lg:grid-rows-3 max-lg:grid-cols-8 place-items-center gap-4 px-2'>
                     <div className='text-4xl max-lg:text-2xl font-bold text-white row-span-1 row-start-1 max-lg:row-span-none max-lg:col-span-1 max-lg:row-start-2 max-lg:-rotate-90'>Services</div>
                     <div className='text-4xl max-lg:text-2xl text-nowrap font-bold text-white row-span-1 col-start-5 row-start-1 max-lg:col-start-8 max-lg:row-span-none max-lg:row-start-2 max-lg:-rotate-90'>We Provide</div>
