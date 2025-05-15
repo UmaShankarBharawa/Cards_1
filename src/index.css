@@ -17,3 +17,30 @@
         opacity: 0.95;
     }
 }
+
+.rotate {
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotateReverse {
+    animation: rotateReverse 10s linear infinite;
+}
+@keyframes rotateReverse {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
